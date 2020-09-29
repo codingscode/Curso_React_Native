@@ -1,15 +1,17 @@
 import { StatusBar } from 'expo-status-bar'
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Testando React Native!</Text>
-      <Button title="Alterar Texto"/>
-      <StatusBar style="auto" />
-    </View>
-  )
+    const [saidaDeTexto, setSaidaDeTexto] = useState('Testando React Native!')
+
+    return (
+      <View style={styles.container}>
+        <Text>{saidaDeTexto}</Text>
+        <Button title="Alterar Texto" onPress={() => setSaidaDeTexto('O texto foi alterado!')} />
+        <StatusBar style="auto" />
+      </View>
+    )
 }
 
 // análogo a CSS
