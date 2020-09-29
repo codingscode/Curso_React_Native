@@ -27,6 +27,8 @@ https://expo.io/
     ------------------------
 
 
+baixar Expo Client no celular, ler o qr code com o celular no navegador 
+depois roda no celular
 
 
 
