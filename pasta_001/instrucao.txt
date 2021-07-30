@@ -12,6 +12,20 @@ https://expo.io/
     cd trab_001
     expo start
 
+
+https://reactnative.dev/
+    https://reactnative.dev/docs/getting-started
+
+
+https://expo.io/
+    https://expo.io/learn
+    no terminal cmd:  npm i expo-cli --global
+    
+
+    expo init trab_001
+    cd trab_001
+    expo start
+
     mensagem
     ------------------------
 

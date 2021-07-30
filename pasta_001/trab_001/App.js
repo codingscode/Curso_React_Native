@@ -2,6 +2,10 @@ import { StatusBar } from 'expo-status-bar'
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 
+export dimport { StatusBar } from 'expo-status-bar'
+import React, { useState } from 'react'
+import { StyleSheet, Text, View, Button } from 'react-native'
+
 export default function App() {
     const [saidaDeTexto, setSaidaDeTexto] = useState('Testando React Native!')
 
