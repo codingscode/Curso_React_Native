@@ -45,7 +45,10 @@ baixar Expo Client no celular, ler o qr code com o celular no navegador
 depois roda no celular
 
 
+npm install --global expo-cli
+expo start
 
+export PATH=/usr/local/lib/nodejs/node14.17.4/bin:$PATH
 
 
 
