@@ -52,7 +52,8 @@ expo start
 ------------------------------------------------------
 pasta_002
 
-
+terminal da pasta reactguide:
+    npm start
 
 
 
