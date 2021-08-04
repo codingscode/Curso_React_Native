@@ -5,6 +5,7 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native'
 
 export default function App() {
   const [metaDigitada, setMetaDigitada] = useState('')
+  const [metasCurso, setMetasCurso] = useState([])
 
   const gerenMetaDigitada = (textoentrada) => {
      setMetaDigitada(textoentrada)
@@ -14,6 +15,10 @@ export default function App() {
     console.log(metaDigitada)
   }
 
+  const adicionargerenMeta = () => {
+    setMetasCurso([...metasCurso, metaDigitada])
+  }
+
   return (
     <View style={estilos.tela} >
       <View style={estilos.entradaContainer} >
@@ -21,6 +26,7 @@ export default function App() {
         <Button title="adicione" onPress={adicionargerenMeta} />
       </View>
       <Text>outro texto!</Text>
+      <View  ></View>
       
     </View>
   )
