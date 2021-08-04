@@ -1,14 +1,24 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native'
 
 
 export default function App() {
+  const [metaDigitada, setMetaDigitada] = useState('')
+
+  const gerenMetaDigitada = (textoentrada) => {
+     setMetaDigitada(textoentrada)
+  }
+
+  const adicionargerenMeta = () => {
+    console.log(metaDigitada)
+  }
+
   return (
     <View style={estilos.tela} >
       <View style={estilos.entradaContainer} >
-        <TextInput placeholder="Meta de curso" style={estilos.entrada} />
-        <Button title="adicione" />
+        <TextInput placeholder="Meta de curso" style={estilos.entrada} onChangeText={gerenMetaDigitada} value={metaDigitada} />
+        <Button title="adicione" onPress={adicionargerenMeta} />
       </View>
       <Text>outro texto!</Text>
       
