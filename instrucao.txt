@@ -59,9 +59,9 @@ terminal da pasta reactguide:
 em react native tudo é com flexbox
 
 
+------------------------------------------------
 
-
-
+pasta react_guide
 
 
 
