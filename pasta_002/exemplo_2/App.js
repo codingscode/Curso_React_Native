@@ -4,7 +4,7 @@ import { Text, View } from 'react-native'
 
 export default function App() {
   return (
-    <View style={{ padding: 50, flexDirection: 'row', width: '80%', height: 300 }}>
+    <View style={{ padding: 50, flexDirection: 'row', width: '80%', height: 300, justifyContent: 'space-between', alignItems: 'center' }}>
       <View style={{ backgroundColor: 'red', justifyContent: 'center', alignItems: 'center' }}>
          <Text>1</Text>
       </View>

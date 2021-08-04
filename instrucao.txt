@@ -56,7 +56,7 @@ terminal da pasta reactguide:
     npm start
 
 
-
+em react native tudo é com flexbox
 
 
 
