@@ -68,7 +68,7 @@ digitar algo no campo de entrada e pressionar adicionar -> o algo digitado apare
 adiona elementos e mostra
 
 agora é possivel fazer o scroll no app (rolagem)
-
+é possivel rolar toda a tela
 
 
 
