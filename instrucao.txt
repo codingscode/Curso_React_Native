@@ -65,7 +65,7 @@ pasta react_guide
 
 digitar algo no campo de entrada e pressionar adicionar -> o algo digitado aparece no terminal
 
-
+adiona elementos e mostra
 
 
 

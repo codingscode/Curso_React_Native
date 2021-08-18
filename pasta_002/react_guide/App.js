@@ -13,11 +13,9 @@ export default function App() {
 
   const adicionargerenMeta = () => {
     console.log(metaDigitada)
-  }
-
-  const adicionargerenMeta = () => {
     setMetasCurso([...metasCurso, metaDigitada])
   }
+
 
   return (
     <View style={estilos.tela} >
@@ -26,7 +24,9 @@ export default function App() {
         <Button title="adicione" onPress={adicionargerenMeta} />
       </View>
       <Text>outro texto!</Text>
-      <View  ></View>
+      <View  >
+         {metasCurso.map((cada) => <Text>{cada}</Text>)}
+      </View>
       
     </View>
   )
