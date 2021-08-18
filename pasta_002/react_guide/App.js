@@ -25,7 +25,10 @@ export default function App() {
       </View>
       <Text>outro texto!</Text>
       <View  >
-         {metasCurso.map((cada) => <Text>{cada}</Text>)}
+         {metasCurso.map((cada, indice) => (
+             <View style={estilos.itemLista} >
+                <Text key={indice} >{cada}</Text>
+             </View>) )}
       </View>
       
     </View>
@@ -33,13 +36,16 @@ export default function App() {
 }
 
 const estilos = StyleSheet.create({
-  tela: {
-     padding: 50
-  },
-  entradaContainer: {
-    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'
-  },
-  entrada: {
-    width: '50%', borderBottomColor: 'black', borderWidth: 1, padding: 14
-  }
+   tela: {
+      padding: 50
+   },
+   entradaContainer: {
+     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'
+   },
+   entrada: {
+     width: '50%', borderBottomColor: 'black', borderWidth: 1, padding: 14
+   },
+   itemLista: {
+      padding: 10, marginVertical: 10, backgroundColor: '#ccc', borderColor: 'black', borderWidth: 1
+   }
 })
