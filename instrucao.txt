@@ -72,7 +72,7 @@ agora é possivel fazer o scroll no app (rolagem)
 
 não se tem mais o warning de key (chave)
 
-
+quebrando em componentes
 
 
 

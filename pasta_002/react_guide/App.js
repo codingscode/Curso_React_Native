@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, TextInput, Button, ScrollView, FlatList } from 'react-native'
 
+import ItemMeta from './components/ItemMeta'
+
 
 export default function App() {
   const [metaDigitada, setMetaDigitada] = useState('')
@@ -25,17 +27,9 @@ export default function App() {
        </View>
        <Text>outro texto!</Text>
        <FlatList keyExtractor={(cada, i) => cada.chave} data={metasCurso} renderItem={cada => (
-                <View style={estilos.itemLista}>
-                   <Text>{cada.item.valor}</Text>
-                </View>
+          <ItemMeta titulo={cada.item.valor} />      
              )}  />
-       {/* <ScrollView>
-         {metasCurso.map((cada, indice) => (
-             <View style={estilos.itemLista} >
-                 <Text key={indice} >{cada}</Text>
-             </View>) )}
-       </ScrollView> */}
-       
+              
      </View>
 
     
@@ -51,8 +45,6 @@ const estilos = StyleSheet.create({
    },
    entrada: {
      width: '50%', borderBottomColor: 'black', borderWidth: 1, padding: 14
-   },
-   itemLista: {
-      padding: 10, marginVertical: 10, backgroundColor: '#ccc', borderColor: 'black', borderWidth: 1
    }
+   
 })
