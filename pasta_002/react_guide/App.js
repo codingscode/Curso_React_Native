@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, TextInput, Button, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, TextInput, Button, ScrollView, FlatList } from 'react-native'
 
 
 export default function App() {
@@ -13,28 +13,32 @@ export default function App() {
 
   const adicionargerenMeta = () => {
     console.log(metaDigitada)
-    setMetasCurso([...metasCurso, metaDigitada])
+    setMetasCurso([...metasCurso, {chave: Math.random().toString(), valor: metaDigitada}])
   }
 
 
   return (
-    <ScrollView>
-      <View style={estilos.tela} >
-        <View style={estilos.entradaContainer} >
-          <TextInput placeholder="Meta de curso" style={estilos.entrada} onChangeText={gerenMetaDigitada} value={metaDigitada} />
-          <Button title="adicione" onPress={adicionargerenMeta} />
-        </View>
-        <Text>outro texto!</Text>
-        <ScrollView>
-          {metasCurso.map((cada, indice) => (
-              <View style={estilos.itemLista} >
-                  <Text key={indice} >{cada}</Text>
-              </View>) )}
-        </ScrollView>
-        
-      </View>
+     <View style={estilos.tela} >
+       <View style={estilos.entradaContainer} >
+         <TextInput placeholder="Meta de curso" style={estilos.entrada} onChangeText={gerenMetaDigitada} value={metaDigitada} />
+         <Button title="adicione" onPress={adicionargerenMeta} />
+       </View>
+       <Text>outro texto!</Text>
+       <FlatList keyExtractor={(cada, i) => cada.chave} data={metasCurso} renderItem={cada => (
+                <View style={estilos.itemLista}>
+                   <Text>{cada.item.valor}</Text>
+                </View>
+             )}  />
+       {/* <ScrollView>
+         {metasCurso.map((cada, indice) => (
+             <View style={estilos.itemLista} >
+                 <Text key={indice} >{cada}</Text>
+             </View>) )}
+       </ScrollView> */}
+       
+     </View>
 
-    </ScrollView>
+    
   )
 }
 

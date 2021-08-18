@@ -70,5 +70,53 @@ adiona elementos e mostra
 agora é possivel fazer o scroll no app (rolagem)
 é possivel rolar toda a tela
 
+não se tem mais o warning de key (chave)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
